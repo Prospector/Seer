@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "insight",
+  "name": "Insight",
+  "version": "$version",
+  "environment": "*",
+  "license": "LGPL-3.0-only",
+  "icon": "assets/insight/icon.png",
+  "entrypoints": {
+    "main": [
+      "com.terraformersmc.insight.Insight"
+    ],
+    "modmenu": [
+      "com.terraformersmc.insight.InsightModMenuCompat"
+    ]
+  },
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/insight",
+    "issues": "https://github.com/TerraformersMC/Insight/issues"
+  },
+  "depends": {
+    "fabric": ">=0.30.0"
+  },
+  "authors": [
+    "Prospector",
+    "TerraformersMC"
+  ],
+  "contributors": [
+    "NeusFear"
+  ],
+  "description": "What am I looking at? Here's what you're looking at."
+}
