@@ -29,7 +29,7 @@ public class InsightPlacementScreen extends Screen {
 	@Override
 	protected void init() {
 		super.init();
-		insightHud = new InsightHud(client, false);
+		insightHud = new InsightHud(client);
 	}
 
 	@Override
