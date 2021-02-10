@@ -15,7 +15,7 @@ public class InsightEventHandler {
 	public static void onRenderHud(MatrixStack matrixStack, float tickDelta) {
 		MinecraftClient client = MinecraftClient.getInstance();
 		if (InsightHud.instance == null) {
-			InsightHud.instance = new InsightHud(client, true);
+			InsightHud.instance = new InsightHud(client);
 		}
 
 		if (!client.options.debugEnabled && !(client.currentScreen instanceof InsightPlacementScreen)) {

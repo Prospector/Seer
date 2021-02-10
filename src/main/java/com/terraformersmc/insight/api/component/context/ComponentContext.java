@@ -1,21 +1,20 @@
 package com.terraformersmc.insight.api.component.context;
 
-import net.minecraft.world.World;
+import net.minecraft.client.MinecraftClient;
 
 public class ComponentContext {
-	private final World world;
-	private final boolean advanced;
+	private final MinecraftClient client;
 
-	public ComponentContext(World world, boolean advanced) {
-		this.world = world;
-		this.advanced = advanced;
+	public ComponentContext(MinecraftClient client) {
+		this.client = client;
 	}
 
-	public World getWorld() {
-		return world;
+	public MinecraftClient getClient() {
+		return this.client;
 	}
 
-	public boolean isAdvanced() {
-		return advanced;
+	@Override
+	public String toString() {
+		return "ComponentContext{client=" + this.client + "}";
 	}
 }
